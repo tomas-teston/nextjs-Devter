@@ -2,5 +2,6 @@
 
 export default (req, res) => {
   res.statusCode = 200;
-  res.json({ userName: 'Tomy' });
+  res.setHeader('Content-Type', 'application/json');
+  res.end(JSON.stringify({ userName: 'Tomy' }));
 };
