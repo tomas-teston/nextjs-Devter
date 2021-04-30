@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import AppLayout from 'components/AppLayout';
 import Button from 'components/Button';
 import useUser from 'hooks/useUser';
 import Head from 'next/head';
@@ -90,35 +89,33 @@ export default function ComposeTweet() {
 
   return (
     <>
-      <AppLayout>
-        <Head>
-          <title>Crear un Devit / Devter</title>
-        </Head>
-        <section className="form-container">
-          <section className="avatar-container">
-            {user && <Avatar src={user.avatar} />}
-          </section>
-          <form onSubmit={handleSubmit}>
-            <textarea
-              placeholder="¿Qué está pasando?"
-              onDragEnter={handleDragEnter}
-              onDragLeave={handleDragLeave}
-              onDrop={handleDragDrop}
-              value={message}
-              onChange={handleChange}
-            ></textarea>
-            {imgURL && (
-              <section className="remove-img">
-                <button onClick={() => setImgURL(null)}>x</button>
-                <img src={imgURL} />
-              </section>
-            )}
-            <div>
-              <Button disabled={isButtonDisabled}>Devitear</Button>
-            </div>
-          </form>
+      <Head>
+        <title>Crear un Devit / Devter</title>
+      </Head>
+      <section className="form-container">
+        <section className="avatar-container">
+          {user && <Avatar src={user.avatar} />}
         </section>
-      </AppLayout>
+        <form onSubmit={handleSubmit}>
+          <textarea
+            placeholder="¿Qué está pasando?"
+            onDragEnter={handleDragEnter}
+            onDragLeave={handleDragLeave}
+            onDrop={handleDragDrop}
+            value={message}
+            onChange={handleChange}
+          ></textarea>
+          {imgURL && (
+            <section className="remove-img">
+              <button onClick={() => setImgURL(null)}>x</button>
+              <img src={imgURL} />
+            </section>
+          )}
+          <div>
+            <Button disabled={isButtonDisabled}>Devitear</Button>
+          </div>
+        </form>
+      </section>
       <style jsx>{`
         div {
           padding: 15px;
