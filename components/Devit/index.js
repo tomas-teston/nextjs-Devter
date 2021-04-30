@@ -1,6 +1,6 @@
 import Avatar from 'components/Avatar';
 import useTimeAgo from 'hooks/useTimeAgo';
-import useDateTimeFormat from 'hooks/useDatetimeFormat';
+import useDateTimeFormat from 'hooks/useDateTimeFormat';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
