@@ -17,7 +17,7 @@ export default function DevitPage(props) {
 
 export async function getStaticPaths() {
   return {
-    paths: [{ params: { id: 'sVzQhhYSYaij3TiA' } }],
+    paths: [],
     fallback: true,
   };
 }
