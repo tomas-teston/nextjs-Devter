@@ -3,8 +3,8 @@ import Head from 'next/head';
 
 import Avatar from 'components/Avatar';
 import Button from 'components/Button';
-import GitHub from 'components/Icons/GitHub.js';
-import Logo from 'components/Icons/Logo';
+import GitHub from 'components/icons/Github';
+import Logo from 'components/icons/Logo';
 
 import { colors } from 'styles/theme';
 

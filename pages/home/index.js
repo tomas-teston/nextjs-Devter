@@ -3,9 +3,9 @@ import Devit from 'components/Devit';
 import useUser from 'hooks/useUser';
 import { listenLatestDevits } from 'firebase/client';
 import Link from 'next/link';
-import Create from 'components/Icons/Create';
-import Home from 'components/Icons/Home';
-import Search from 'components/Icons/Search';
+import Create from 'components/icons/Create';
+import Home from 'components/icons/Home';
+import Search from 'components/icons/Search';
 import Head from 'next/head';
 
 export default function HomePage() {
